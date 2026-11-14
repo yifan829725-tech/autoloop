@@ -33,6 +33,7 @@ network:
   - rust
   - java
   - dotnet
+  - codex
 
 safe-outputs:
   max-patch-size: 10240
@@ -117,9 +118,7 @@ steps:
       python3 .github/workflows/scripts/autoloop_scheduler.py
 
 source: githubnext/autoloop
-engine:
-  id: copilot
-  copilot-sdk: true
+engine: codex
 ---
 
 # Autoloop
